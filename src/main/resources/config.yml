@@ -1,0 +1,87 @@
+#
+#Prison-Core
+#
+#CREATED BY aDragz
+#
+
+#Do not change, this is used for updating configs
+Version: 218
+
+Features:
+  Ranks:
+    Enabled: true                                                                                       #Default = true
+  Gangs: #Make sure Gangs are also enabled for this feature. [Uses Gangs as Mine Management]
+    Enabled: true                                                                                       #Default = true
+  Private_Mines: #Make sure Gangs are also enabled for this feature. [Uses Gangs as Mine Management]
+    Enabled: true                                                                                       #Default = true
+  Sell: #Used for multipliers, tokens etc
+    Enabled: true                                                                                       #Default = true
+  Transactions: #Admin-Logs
+    Enabled: true                                                                                       #Default = true
+
+Type:
+  Ranks:
+    #Type of ranks system. Either Standard, A-Z or Infinite. (Long limit. So max number is 9,223,372,036,854,775,808)
+    Type: Standard #Types = Standard, Infinite                                                          Default = Standard
+    #Have multiple servers? Add the name here and it will set the rank just for that server.
+    #This is Case sensitive!
+    Server_Name: "null" #"null" = no server. Enter server name here, like "Prison".                     Default = "null"
+
+    #The title displayed to the user when they rankup.
+    Rankup_Title:
+      Enabled: true #If you want this feature enabled or not.                                           Default = true
+      Message: "&8&l[&c&lPrison&8&l-&c&lCore&8&l]" #Main message
+      Sub_Message: "&8&l[&aYou Ranked up to &fNEXTRANK!&8&l]" #Below sub message
+
+      #Cosmetics
+      fadeIn: 10 #Time for the title to fade in.                                                        Default = 10
+      fadeOut: 10 #Time for the title to fade out.                                                      Default = 20
+      Stay: 10 #How long the title appears for before fading out.                                       Default = 70
+  Gangs:
+    #Keep invites low to save on lag, depends on your player base.
+    Max_Invites: 3 #Gang Invites                                                                        Default = 3
+    Max_Members: 5 #Gang Members                                                                        Default = 5
+
+    Chat:
+      Default_Value: true #If gang chat is enabled on default                                           Default = true
+      Prefix: "#" #Start of the chat. "#Hello" goes into gang chat instead of global.                   Default = "#"
+
+      #
+      #Placeholders:
+      #
+      #GANGNAME = Players gang name
+      #SENDERNAME = Players name (default case)     [aDragz]
+      #SENDERNAMELOWER = Players name lowercase     [adragz]
+      #SENDERNAMEHIGHER = Players name uppercase     [ADRAGZ]
+      #MESSAGE = Message without prefix
+      #
+
+      Format: "&8[&6GANGNAME&8] &cSENDERNAME &7» &fMESSAGE" #Format in gang chat when a message is sent Default = "&8[&6GANGNAME&8] &cSENDERNAME &7» &fMESSAGE"
+  Private_Mine:
+    Schematic_Name: "" #To create Schematic, Create using FAWE and run [PrisonCore schematic <name>].   Default = ""
+    World: "World" #World name that the mines will generate in. (Case-Sensitive)                        Default = "World"
+
+    #So the mine can generate fully with your build, grab X and Y values from your build.
+    #Make sure it is higher than the max upgraded mine. So if your mine is 50x50, but you have buildings to make it look more 'advanced' and
+    #colourful, add 30x to here. So the Width value would be 80 [80x80]
+
+    #Help? //Size should help with the calculations
+
+    Width: 100 #Width of the Schematic                                                                  Default = 100
+    Height: 100 #Height of the Schematic                                                                Default = 100
+
+    tp_Offset: #Want to spawn on the edge of the mine? Higher or lower? Edit the values here. Example:
+      #X: 15 (Adds 15blocks on the X value)
+      #Y: -3 (Removes 3blocks - on the Y value)
+      #Z: 0 (Doesn't change the Z value)
+      X: 0                                                                                             #Default = 0
+      Y: 0                                                                                             #Default = 0
+      Z: 0                                                                                             #Default = 0
+
+    #Warning: With region flags, they will be set with new region creations, not existing ones.
+    Region_Flags:
+      BLOCK_BREAK: true #Allows player to break block in mine region                                    Default = true
+      BLOCK_PLACE: false #Denies player to place blocks in mine region                                  Default = false
+      FALL_DAMAGE: false #If the player can take damage or not                                          Default = false
+      ITEM_DROP: false #If the player can drop items or not                                             Default = false
+      ITEM_PICKUP: false #If the player can pick items up or not                                        Default = false

@@ -1,0 +1,17 @@
+Sell-Price:
+
+  #Calculation:
+  #(tier*tier)/10)+5
+  #Default = ((tier*tier)/10)+5. So if tier = 100, ((100*100)/10)+5 = 1005 per block
+  #Default = ((tier*Multiplier)/Divide)+Default_Value
+
+  Default_Value: 5
+  Divide: 10
+  Multiplier: TIER #Can be Number
+
+Block-Tiers:
+
+  #If Tier-Increase = 4, tier 4 = 16
+  #If Tier-Increase = 5, tier 4 = 20
+
+  Tier-Increase: 4 #How many it adds from previous tier

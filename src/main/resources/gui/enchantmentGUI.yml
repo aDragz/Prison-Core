@@ -1,0 +1,114 @@
+GUI:
+  Title: "&aEnchantments"
+  Size: 27 #Size of the Inventory
+  Filler_Block: GLASS_PANE #If it is not located below, it will use this as a filler.
+  Tier:
+    Locked: RED_STAINED_GLASS
+    Current: YELLOW_STAINED_GLASS
+    Unlocked: GREEN_STAINED_GLASS
+  1:
+    11:
+      Type: ENCHANTMENT
+      Enchantment: "Efficiency"
+      Display_Name: "&aEfficiency"
+      Material: SUGAR
+      Lore:
+        - "&6Level&f: &aLEVEL&c | &f255"
+        - "&6Cost&f: &eCOST&c &fTokens"
+    13:
+      Type: ENCHANTMENT
+      Enchantment: "Fortune"
+      Display_Name: "&5Fortune"
+      Material: GOLDEN_PICKAXE
+      Lore:
+        - "&6Level&f: &aLEVEL&c | &f10000"
+        - "&6Cost&f: &eCOST&c &fTokens"
+    15:
+      Type: ENCHANTMENT
+      Enchantment: "Exp"
+      Display_Name: "&5Exp"
+      Material: EXPERIENCE_BOTTLE
+      Lore:
+        - ""
+        - "&4Level&f: &aLEVEL&c | &f10000"
+        - "&4Cost&f: &6COST &fTokens"
+    19:
+      Type: ENCHANTMENT
+      Enchantment: "Thunder"
+      Display_Name: "&9Thunder"
+      Material: TRIDENT
+      Lore:
+        - "&6Level&f: &aLEVEL&c | &f1000"
+        - "&6Cost&f: &eCOST &fTokens"
+        - ""
+        - "&4Proc Chance&f: &fPROCCHANCE&f%"
+    21:
+      Type: ENCHANTMENT
+      Enchantment: "Jackhammer"
+      Display_Name: "&cJackhammer"
+      Material: AMETHYST_SHARD
+      Lore:
+        - "&6Level&f: &aLEVEL&c | &f1000"
+        - "&6Cost&f: &eCOST&c &fTokens"
+        - ""
+        - "&4Proc Chance&f: &fPROCCHANCE&f%"
+    23:
+      Type: ENCHANTMENT
+      Enchantment: "Tnt"
+      Display_Name: "&4Tnt"
+      Material: TNT
+      Lore:
+        - "&6Level&f: &aLEVEL&c | &f1000"
+        - "&6Cost&f: &eCOST&c &fTokens"
+        - ""
+        - "&4Proc Chance&f: &fPROCCHANCE&f%"
+    25:
+      Type: ENCHANTMENT
+      Enchantment: "Laser"
+      Display_Name: "&4Laser"
+      Material: BLAZE_ROD
+      Lore:
+        - "&6Level&f: &aLEVEL&c | &f1000"
+        - "&6Cost&f: &eCOST&c &fTokens"
+        - ""
+        - "&4Proc Chance&f: &fPROCCHANCE&f%"
+    29:
+      Type: ENCHANTMENT
+      Enchantment: "Money Finder"
+      Display_Name: "&6Money Finder"
+      Material: GOLD_INGOT
+      Lore:
+        - "&6Level&f: &aLEVEL&c | &f10000"
+        - "&6Cost&f: &eCOST&c &fTokens"
+        - ""
+        - "&4Proc Chance&f: &fPROCCHANCE&f%"
+    33:
+      Type: ENCHANTMENT
+      Enchantment: "Token Finder"
+      Display_Name: "&eToken Finder"
+      Material: GOLD_INGOT
+      Lore:
+        - "&6Level&f: &aLEVEL&c | &f10000"
+        - "&6Cost&f: &eCOST&c &fTokens"
+        - ""
+        - "&4Proc Chance&f: &fPROCCHANCE&f%"
+    39:
+      Type: ENCHANTMENT
+      Enchantment: "Nuke"
+      Display_Name: "&4Nuke"
+      Material: NETHERITE_PICKAXE
+      Lore:
+        - "&6Level&f: &aLEVEL&c | &f10000"
+        - "&6Cost&f: &eCOST&c &fTokens"
+        - ""
+        - "&4Proc Chance&f: &fPROCCHANCE&f%"
+    41:
+      Type: ENCHANTMENT
+      Enchantment: "Charity"
+      Display_Name: "&aCharity"
+      Material: EMERALD
+      Lore:
+        - "&6Level&f: &aLEVEL&c | &f10000"
+        - "&6Cost&f: &eCOST&c &fTokens"
+        - ""
+        - "&4Proc Chance&f: &fPROCCHANCE&f%"

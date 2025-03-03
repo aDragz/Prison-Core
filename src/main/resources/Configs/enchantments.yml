@@ -1,0 +1,114 @@
+#Enchantments config file
+#For more help, check https://prisoncore.dev/
+
+Pickaxe:
+  Display-Name: "&8NAME's &7Pickaxe"
+  Material: IRON_PICKAXE
+  Drop-Type: DROP #DROP, RIGHT_CLICK
+  Lore:
+    - "" #Line 0
+    - "&7&oPress Q to open Enchantments Menu" #Line 1
+    - "&7&oUpgrade Amount: Left = 1, Right = 10, Shift+Click = 100" #Line 2
+    - "" #Line 3
+    - "Blocks" #Line 4
+    - "" #Line 5
+    - "Level" #Line 6
+    - "" #Line 7
+    - "&c&lEnchantments:" #Keep Enchantments at bottom
+
+  Lore-Special:
+    Blocks-Broken:
+      Enabled: True
+      Line: 4
+      Lore: "&eBlocks Broken&f: &aBLOCKS"
+    Pickaxe-Level:
+      Enabled: True
+      Line: 6
+      Lore: "&ePickaxe Level&f: &aLEVEL PERCENTAGE"
+
+Efficiency:
+  Display-Name: "&fEfficiency: &d" #&d is the Number Colour. Make sure to keep a space! If you would like the number to stay the same, use "&fEfficiency &f".
+  Price-Increase: 1000
+  Max-Value: 255 #255 Is the max enchant level for Minecraft. Do not set higher, or it may cause issues
+
+Fortune:
+  Display-Name: "&aFortune: &d"
+  Price-Increase: 100
+  Max-Value: 10000
+
+Exp:
+  Display-Name: "&2Exp: &d"
+  Price-Increase: 1000
+  Max-Value: 10000
+
+Money-Finder:
+  Display-Name: "&6Money Finder: &d"
+  Price-Increase: 500
+  Max-Value: 10000
+  #For the Proc-Calculation, Make sure the Max Value adds over 0. Or there will be errors!
+  Proc-Calculation: 100.0 #To calculate percent, do LEVEL/NUMBER. So 1000(max)/100 = 10%. 1(min)/100 = 0.01%
+
+  #Amount given: (value * (level/divide)), so default:
+  #(100000(value)*(10000(max)/10)) = $100,000,000 per proc
+  Value: 100000
+  Divide: 10
+
+Token-Finder:
+  Display-Name: "&eToken Finder: &d"
+  Price-Increase: 1000
+  Max-Value: 10000
+  #Proc-Calculation has to have .(number) at the end. Aka 100.0, 99.9, 99.8 etc.
+  Proc-Calculation: 100.0
+
+  Value: 1500
+  Divide: 10
+
+Jackhammer:
+  Display-Name: "&cJackhammer: &d"
+  Price-Increase: 6000
+  Max-Value: 1000
+
+  Proc-Calculation: 100.0
+
+Tnt:
+  Display-Name: "&4Tnt: &d"
+  Price-Increase: 4000
+  Max-Value: 1000
+  Max-Layers: 10
+
+  Proc-Calculation: 1000.0
+
+Laser:
+  Display-Name: "&4Laser: &d"
+  Price-Increase: 2000
+  Max-Value: 1000
+
+  Proc-Calculation: 50.0
+
+Thunder:
+  Display-Name: "&9Thunder: &d"
+  Price-Increase: 2500
+  Max-Value: 1000
+
+  #How many Layers will it strike?
+  #(Level(Rounded) / 200) + Min
+  Min-Lightning: 1 #Default amount of Layers
+  Max-Lightning: 10 #Maximum amount of Layers it will take
+
+  Proc-Calculation: 50.0
+
+Charity:
+  Display-Name: "&6Charity: &d"
+  Price-Increase: 250
+  Max-Value: 10000
+
+  Proc-Calculation: 5.0
+  Value: 1500
+  Divide: 10
+
+Nuke:
+  Display-Name: "&4Nuke: &d"
+  Price-Increase: 3000
+  Max-Value: 10000
+
+  Proc-Calculation: 50.0

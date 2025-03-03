@@ -1,0 +1,63 @@
+name: Prison-Core
+version: '${project.version}'
+main: prisoncore.aDragz.main
+api-version: 1.20
+website: https://prisoncore.dev
+description: All in one solution towards the prison gamemode
+loadbefore: [ Essentials ]
+commands:
+  prisoncore:
+    aliases: [ pc ]
+  admin:
+    description: Prison-Core's Administrative Commands
+    aliases: [ administrator, admins]
+  reboot:
+    description: Reboots the server
+    aliases: reboots
+  ranks:
+    description: Shows the ranks on the Server
+    aliases: rank
+  rankup:
+    description: Rankup to the next Rank
+    aliases: [ rankups, rup ]
+  rankupmax:
+    description: Max Rankup to the next Rank
+    aliases: maxrankup
+  multiplier:
+    description: Sell booster x multiplier
+    aliases: multi
+  #mines:
+  #  description: Manage the mines
+  #  aliases: mine
+  #robots:
+  #  aliases: robot
+  gang:
+    description: Manage your gang.
+    aliases: gangs
+  mine:
+    aliases: [ mines, pmine, pmines, privatemine ]
+  pve:
+    description: Tps to pve.
+
+  token:
+    aliases: [ tokens, gems, gem ]
+
+  transactions:
+    aliases: [ transaction, t]
+    description: Displays transactions
+  #Gang:
+  checkgang:
+    description: §eGrabs gang Info of §e<§fPlayer§e>
+    aliases: [ gangcheck, checkganginfo, ganginfo ]
+  blocks:
+    description: §eDisplays the amount of breaks you broke
+
+depend:
+  - Essentials
+  - FastAsyncWorldEdit
+  - Vault
+  - WorldGuard
+  - Multiverse-Core
+  - PlaceholderAPI
+softdepend:
+  - LuckPerms

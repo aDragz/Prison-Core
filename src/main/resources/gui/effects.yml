@@ -1,0 +1,36 @@
+GUI:
+  Size: 27 #Size of the Inventory
+  Filler_Block: GLASS_PANE #If it is not located below, it will use this as a filler.
+
+  #EffectName JavaDocs:
+  #https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html
+  #Need help? Check https://prisoncore.dev or ask in the discord. Check in the website.
+
+  10:
+    Type: Effects #So the plugin knows what to do.
+    Display_Name: "&eSpeed" #What item displays as the name
+    Material: SUGAR #What item looks like in gui
+    Lore: "&eGives you speed IV" #Lore for displayed item
+    EffectName: "Speed" #What effect to give the player
+    Multiplier: 4 #Speed 4
+  12:
+    Type: Effects
+    Display_Name: "&eHaste"
+    Material: GOLDEN_PICKAXE
+    Lore: "&eGives you haste III"
+    EffectName: "Fast_Digging"
+    Multiplier: 3
+  14:
+    Type: Effects
+    Display_Name: "&eJump Boost"
+    Material: RABBIT_FOOT
+    Lore: "&eGives you Jump Boost V"
+    EffectName: "Jump"
+    Multiplier: 5
+  16:
+    Type: Effects
+    Display_Name: "&eInvisibility"
+    Material: ENDER_PEARL
+    Lore: "&eGives you Invisibility"
+    EffectName: "Invisibility"
+    Multiplier: 1

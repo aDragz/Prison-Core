@@ -1,0 +1,13 @@
+Intervals: [1, 2, 3, 10, 30, 60, 300, 600] #Seconds, so every 10, 30 60, 300 and 600 seconds. 600 = 10 Minutes, 300 = 5 Minutes etc
+
+Messages:
+  #Make sure the Intervals display here.
+  Rebooting_Now: "&7The server is now rebooting!"
+  1: "&7The server is rebooting in 1 second!"
+  2: "&7The server is rebooting in 2 seconds!"
+  3: "&7The server is rebooting in 3 seconds!"
+  10: "&7The server is rebooting in 10 seconds!"
+  30: "&7The server is rebooting in 30 seconds!"
+  60: "&7The server is rebooting in 60 seconds!"
+  300: "&7The server is rebooting in 5 minutes!"
+  600: "&7The server is rebooting in 10 minutes!"

@@ -1,0 +1,114 @@
+GUI:
+  Size: 27 #Size of the Inventory
+  Filler_Block: GLASS_PANE #If it is not located below, it will use this as a filler.
+  Tier:
+    Locked: RED_STAINED_GLASS
+    Current: YELLOW_STAINED_GLASS
+    Unlocked: GREEN_STAINED_GLASS
+  Effects:
+    Display_Name: "&eEffects"
+    Material: BLAZE_ROD
+    Lore:
+      - "&eClick for effects"
+  MineTP:
+    Display_Name: "&dTp to mine"
+    Material: OAK_SIGN
+  Upgrade_Mine:
+    Display_Name: "&eUpgrade Mine"
+    Material: GREEN_CONCRETE
+    Lore:
+      - "&eCurrent Tier: &cCURRENTTIER"
+      - "&eNext Tier: &cNEXTTIER"
+  Blocks:
+    Display_Name: "&7Block Manager"
+    Lore:
+      - "&eCurrent Block: &cBLOCK"
+  #Currently used for "/mine blocks"
+  Pages:
+    Forward:
+      Display_Name: "&fPage &e-->"
+      Material: GREEN_WOOL
+    Backward:
+      Display_Name: "&e<-- &fPage"
+      Material: RED_WOOL
+
+  1: #page number
+    10:
+      Type: MINETP
+    12:
+      Type: EFFECTS
+    14:
+      Type: STATS
+      Display_Name: "&eStatistics"
+      Material: MAP
+    16:
+      Type: UPGRADE
+
+#Tier upgrades:
+
+1:
+  Size: 5 #Size of the mine.
+  Height: 5 #Height of the mine.
+
+2:
+  Size: 5
+  Height: 7
+  Requirements:
+    Type: Permission
+    Value: "Group.D"
+
+3:
+  Size: 7
+  Height: 10
+  Requirements:
+    Type: Money
+    Value: 12000000 #12,000,000 (12Mill)
+
+4:
+  Size: 10
+  Height: 10
+  Requirements:
+    Type: Permission
+    Value: "Group.H"
+
+5:
+  Size: 10
+  Height: 15
+  Requirements:
+    Type: Permission
+    Value: "Group.L"
+
+6:
+  Size: 15
+  Height: 15
+  Requirements:
+    Type: Money
+    Value: 24000000 #24,000,000
+
+7:
+  Size: 17
+  Height: 15
+  Requirements:
+    Type: Permission
+    Value: "Group.O"
+
+8:
+  Size: 20
+  Height: 15
+  Requirements:
+    Type: Money
+    Value: 24500000 #24,500,000
+
+9:
+  Size: 20
+  Height: 20
+  Requirements:
+    Type: Money
+    Value: 30000000 #30,000,000
+
+10:
+  Size: 25
+  Height: 25
+  Requirements:
+    Type: Money
+    Value: 36000000 #36,000,000

@@ -1,0 +1,19 @@
+Price:
+  Base-Price: 1000
+  Multiplier: 1.10
+
+Rewards:
+  #How do levels work?
+  #It grabs the Square root of the current rank
+  #Then rounds it to the nearest number
+
+  1: #Rank 1
+    Commands:
+      - "eco give PLAYER 1000"
+      - "token give PLAYER 5000"
+  2: #Rank 4
+    Commands:
+      - "token give PLAYER 7500"
+  5: #Rank 25
+    Commands:
+      - "eco give PLAYER 15000"
