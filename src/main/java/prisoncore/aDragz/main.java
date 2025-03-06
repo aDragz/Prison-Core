@@ -24,7 +24,6 @@ import prisoncore.aDragz.Features.Logs.CommandHandler.logsTab;
 import prisoncore.aDragz.Features.Logs.LogManagement.Tokens.saveTokenTransactions;
 import prisoncore.aDragz.Features.Logs.LogManagement.Tokens.storeTokenTransactions;
 import prisoncore.aDragz.Features.Player.Commands.Admin.moderator_commands.minor.checkGang;
-import prisoncore.aDragz.Features.Pouches.Events.PouchJoinEvent;
 import prisoncore.aDragz.Features.PrisonCoreAdmin.adminCommandHandler;
 import prisoncore.aDragz.Features.PrivateMines.PMineCommandHandler;
 import prisoncore.aDragz.Features.PrivateMines.minesTab;
@@ -123,11 +122,6 @@ public final class main extends JavaPlugin implements Listener {
         getCommand("reboot").setExecutor(new rebootCommands());
         rebootCooldown.timer(); //Runs timer, do it now so it repeats one time, rather than many. Or it will lag the server, and display many instances
         
-        //pouches:
-        //first player join event for the whole core:
-        this.getServer().getPluginManager().registerEvents(new PouchJoinEvent(), this);
-        
-        
         if (config.getBoolean("Features.Ranks.Enabled")) {
             try {
                 if (ranks.checkConfig()) {
@@ -186,15 +180,6 @@ public final class main extends JavaPlugin implements Listener {
         getCommand("prisoncore").setExecutor(new adminCommandHandler());
         getCommand("admin").setExecutor(new adminCommandManager());
         getCommand("admin").setTabCompleter(new adminTab());
-        
-        /*PVE
-        getCommand("spawnmobs").setExecutor(new commands());
-        this.getServer().getPluginManager().registerEvents(new creeperExplosion(), this);
-        this.getServer().getPluginManager().registerEvents(new mobKill(), this);
-        onStartUp.generateLocations();
-        spawnMobs.generateMobs();
-        getCommand("pve").setExecutor(new tpPlayer());
-         */
         
         try {
             getCommand("blocks").setExecutor(new block());

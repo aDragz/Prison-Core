@@ -1,0 +1,15 @@
+How this works? Make sure to change the values in these classes. The . means directory, like in a command line.
+
+Remember to change values in:
+Enchants:
+
+Enchantments.Pickaxe.Events.GuiLore.setPickaxeLore
+Enchantments.Pickaxe.Events.GuiLore.updateLore
+Enchantments.Pickaxe.GuiManager.clickManager
+Enchantments.EnchantManager.getLevel
+Enchantments.EnchantManager.getProc
+Enchantments.EnchantManager.getPrice
+Enchantments.EnchantManager.getProcPercent
+
+Admin:
+adminTab.tabList - In Letter Order
