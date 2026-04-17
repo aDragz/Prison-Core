@@ -6,7 +6,7 @@ Prison Core is the ultimate core for your server.
 No, I am no longer supporting this Plugin. But I am coding new plugins to replace Prison-Core. This may change in the future, but as of April 2026, I am working on other "Big" Projects.
 
 ## Why is it open sourced? Does this mean you are not working on it?
-No, I made it open source because I do not believe in closed source Plugins or Applications. I will still work on this project. The reason there may not be many pushes is because I have added most features which I believe should be in a prison core. If you have any suggestions, you can talk to me in my discord
+I made it open source because I do not believe in closed source Plugins or Applications, unless they are paid products, in which you will get the source code (sold seperately).
 
 ## Requirements
 The only requirements you need to clone this project is Maven. It is a very known tool for compiling plugins.
